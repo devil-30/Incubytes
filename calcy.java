@@ -8,8 +8,19 @@ class StringCalculator
             System.out.println("0");
         else
         {
-            
+            ArrayList<Integer> NArray=new ArrayList<Integer>();
+            char[] ch=numbers.toCharArray();
+            for(char c:ch)
+            {
+                if(Character.isDigit(c))
+                {
+                    int a=Character.getNumericValue(c);
+                    NArray.add(a);
+                }
+            }
+            System.out.println(NArray);
         }
+        return 0;
     }
 }
 class calcy
