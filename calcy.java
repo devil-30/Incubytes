@@ -19,6 +19,13 @@ class StringCalculator
                 }
             }
             System.out.println(NArray);
+            int sum=0;
+            for(Integer value:NArray)
+            {
+                if(value<=1000)
+                    sum+=value;
+            }
+            System.out.println(sum);
         }
         return 0;
     }
